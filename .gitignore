@@ -1,0 +1,19 @@
+# Ignore Node.js related files
+node_modules/
+package-lock.json
+yarn.lock
+
+# Ignore development build output
+dist/
+build/
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore editor/IDE specific files
+.vscode/
+.idea/
+
+# Ignore log and temp files
+*.log
+*.tmp
