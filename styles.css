@@ -1,0 +1,30 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    background-color: #fff7f0;
+    color: black;
+    text-decoration: none;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.navlink{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+figcaption {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-right: 0.1rem;
+}
+
+.title{
+    font-size: 1.5rem;
+    /* change font later */
+    font-family: cursive;
+}
+.center{
+    text-align: center;
+}
