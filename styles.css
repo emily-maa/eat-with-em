@@ -125,9 +125,7 @@ figcaption {
     margin-top: 5px;
     font-style: italic;
 }
+.about_me{
+    margin-top: 3%;
+}
 
-/* .recipe_links{
-    list-style: none;
-    text-decoration: underline;
-    color: brown
-} */
