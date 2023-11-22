@@ -3,14 +3,122 @@
 *{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 100;
-    background-color: #fff7f0;
     color: black;
     text-decoration: none;
-    margin-left: 10%;
-    margin-right: 10%;
+    box-sizing: border-box;
+
 }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff7f0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eed9c4;
+    /* flex-direction: column; */
+    align-items: flex-start;
+}
+.title {
+    font-size: 1.5rem;
+    font-family: 'Satisfy', cursive;
+    margin: 1rem;
+}
+.navlink{
+    display: none;
+    width: 100%;
+}
+.navlink ul{
+    width: 100%;
+    flex-direction: column; 
+}
+.navlink li{
+    list-style: none;
+    text-align: center;
+}
+.navlink li a{
+    padding: .5rem 1rem;
+    display: block;
+    font-size: 1.2rem;
+}
+.navlink li:hover{
+    background-color: #d9b99b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.navlink li a:hover {
+    font-weight: bold;
+}
+.toggle-button{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: black;
+    
+}
+.navlink.active{
+    display: flex;
+}
+.homepage{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.homepage img{
+    margin: 2vh;
+}
+.homepage figcaption{
+    margin-top: 0vh;
+    margin-bottom: 3vh;
+}
+.homepage figcaption:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.homepage img:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (min-width: 680px) {
+    .toggle-button {
+        display: none;
+    }
+    .navlink{
+        display: flex;
+    }
+    .navlink ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .navlink li a{
+        display: block;
+    }
+
+       
+}
+/* .class{
+    display: grid;
+}
+h1{
+    text-align: center;
+} */
 /* home page */
-h3{
+/* h3{
     font-size: 1.5rem;
     font-family: 'Noto Serif Vithkuqi', serif;
 }
@@ -25,19 +133,21 @@ h3{
 figcaption {
     font-size: 1.2rem;
     margin-top: 0.5rem;
-    margin-right: 0.1rem;
+    margin-bottom: 3rem;
 }
 
-.title{
-    font-size: 1.5rem;
-    font-family: 'Satisfy', cursive;
-}
+
 .center{
     text-align: center;
 }
+.center img{
+    display: block;
+    margin:auto;
+    width: 50%;
+}
 /* end home page */
 /* specific recipe page styling */
-.recipe{
+/* .recipe{
     border: 4mm ridge rgba(245, 216, 184, 0.6);
     margin-left: 10%;
     margin-right: 10%;
@@ -55,6 +165,7 @@ figcaption {
 .image_caption p{
     margin-left: 0px;
 }
+
 .recipe h3{
     font-size: 1.5rem;
     font-weight: bold;
@@ -80,37 +191,34 @@ figcaption {
     margin-left: 0;
     padding: 0;
     /* margin-bottom: 1rem; */
-}
+/* } */
 /* indents ingredients */
-.recipe_instructions li {
+/* .recipe_instructions li {
     margin-left: 0;
     padding: 0;
     margin-bottom: 1rem;
-}
-.numbered{
-    list-style: decimal;
-}
+} */
 /* end specific recipe styling */
-.courses {
+/* .courses {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     /* Allow items to wrap to the next line */
-    justify-content: space-between;
+    /* justify-content: space-between;
     padding: 0;
-    margin: 0;
-}
+    margin: 0; */
+/* }  */
 
-.courses li {
+/* .courses li {
     flex: 0 0 calc(33.33% - 20px);
     /* Adjust width based on the number of items */
-    margin: 10px;
+    /* margin: 10px;
     /* Add margin for spacing between items */
-    box-sizing: border-box;
+    /* box-sizing: border-box;  */
     /* Include padding and border in width calculation */
-}
+/* }  */
 
-.courses a {
+/* .courses a {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -119,13 +227,14 @@ figcaption {
 .courses img {
     max-width: 100%;
     height: auto;
-}
+    width: 200px;
+} */
 
-.courses figcaption {
+/* .courses figcaption {
     margin-top: 5px;
     font-style: italic;
 }
 .about_me{
     margin-top: 3%;
-}
+}  */
 
