@@ -20,11 +20,13 @@ body{
     background-color: #eed9c4;
     /* flex-direction: column; */
     align-items: flex-start;
+    flex-direction: column;
 }
 .title {
     font-size: 1.5rem;
     font-family: 'Satisfy', cursive;
     margin: 1rem;
+    white-space: nowrap;
 }
 .navlink{
     display: none;
@@ -32,7 +34,9 @@ body{
 }
 .navlink ul{
     width: 100%;
-    flex-direction: column; 
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0; 
 }
 .navlink li{
     list-style: none;
@@ -71,24 +75,55 @@ body{
 .navlink.active{
     display: flex;
 }
-.homepage{
+.homepage, .recipes_page{
     width: 80%;
     margin: auto;
     text-align: center;
 }
-.homepage img{
-    margin: 2vh;
+
+.homepage figcaption, .recipes_page figcaption{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
-.homepage figcaption{
-    margin-top: 0vh;
-    margin-bottom: 3vh;
-}
-.homepage figcaption:hover{
+.homepage figcaption:hover, .recipes_page figcaption:hover{
     text-decoration: underline;
     font-weight: bold;
 }
-.homepage img:hover{
-    transform: scale(1.05);
+.homepage img:hover, .recipes_page img:hover{
+    transform: scale(1.02);
+}
+.recommended_recipe{
+    /* border: solid 2px black; */
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 2vh;
+    box-shadow: 0px 0px 8px 4px rgba(238, 217, 196, 1);
+    padding-bottom: .1vh;
+}
+.recipe{
+    width: 80%;
+    margin: auto;
+}
+.recipe img{
+    margin: auto;
+    display: flex;
+}
+.recipe h2, .recipe .image_caption,.recipe .servings{
+    text-align: center;
+}
+.recipe h2{
+    font-weight: bold;
+}
+.recipe_instructions h3{
+    font-weight: bold;
+}
+.about_page, .contact_page {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.about_page h2, .contact_page h2{
+    font-weight: bold;
 }
 
 @media screen and (min-width: 680px) {
@@ -107,6 +142,9 @@ body{
     }
     .navlink li a{
         display: block;
+    }
+    .navbar{
+        display: flex;
     }
 
        
@@ -137,9 +175,7 @@ figcaption {
 }
 
 
-.center{
-    text-align: center;
-}
+
 .center img{
     display: block;
     margin:auto;

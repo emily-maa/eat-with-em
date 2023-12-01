@@ -4,58 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes</title>
-    <link rel="stylesheet" href="../../styles.css">
+    <title>Eat With Em</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
-<body>
+<body class="home">
     <!-- navigation bar -->
-    <div class="nav">
-        <a href="../../index.html" class="navlink">Home</a>
-        <a href="../../recipes.html" class="navlink">Recipes</a>
-        <a href="../../about.html" class="navlink">About</a>
-        <a href="../../contact.html" class="navlink">Contact</a>
-    </div>
+    <nav class="navbar">
+        <h1 class="title">Eat With Em</h1>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navlink">
+            <ul>
+                <li><a href="index.html" class="navlink">Home</a></li>
+                <li><a href="recipes.html" class="navlink">Recipes</a></li>
+                <li><a href="about.html" class="navlink">About</a></li>
+                <li><a href="contact.html" class="navlink">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- title -->
-    <h1 class="title">Eat With Em</h1>
+
 
     <!-- recommended recipes -->
-    <div class="center">
-        <h3>Recipes</h3>
-        <ul class="courses">
-            <li><a href="./recipes/avocado_toast.html">
-                <img src="./images/avocado_toast.jpg" alt="avocado toast">
-                <figcaption>Breakfast</figcaption>
-            </a></li>
-            <li><a href="#">
-                <img src="./recipes/avocado_toast/avocado_toast.jpg" alt="avocado toast">
-                <figcaption>Lunch</figcaption>
-            </a></li>
-            <li><a href="./recipes/green_beans.html">
-                <img src="./images/green_beans.jpg" alt="avocado toast">
-                <figcaption>Dinner</figcaption>
-            </a></li>
-            <li><a href="#">
-                <img src="./recipes/avocado_toast/avocado_toast.jpg" alt="avocado toast">
-                <figcaption>Dessert</figcaption>
-            </a></li>
-            <li><a href="#">
-                <img src="./recipes/avocado_toast/avocado_toast.jpg" alt="avocado toast">
-                <figcaption>Drinks</figcaption>
-            </a></li>
-            <li><a href="#">
-                <img src="./recipes/avocado_toast/avocado_toast.jpg" alt="avocado toast">
-                <figcaption>Snacks</figcaption>
-            </a></li>
-                
-        </ul>
-        <!-- <ul>
-            <li><a class="recipe_links" href="./recipes/avocado_toast/avocado_toast.html">Avocado Toast w/ Pesto Egg</a></li>
-        </ul> -->
+    <div class="recipes_page">
+        <h2>Recipes</h2>
+        <div class="recommended_recipe">
+            <a href="breakfast_recipes.html">
+                <img src="images/avocado_toast.jpg" alt="avocado toast">
+                <figcaption>Breakfast Recipes</figcaption>
+            </a>
+        </div>
+
+        <div class="recommended_recipe">
+            <a href="lunch_recipes.html">
+                <img src="images/green_beans.jpg" alt="green beans">
+                <figcaption>Lunch Recipes</figcaption>
+            </a>
+        </div>
+        <div class="recommended_recipe">
+            <a href="dinner_recipes.html">
+                <img src="images/gochujang_pasta.jpg" alt="green beans">
+                <figcaption>Dinner Recipes</figcaption>
+            </a>
+        </div>
+
     </div>
-
-
+    <script src="script.js" defer></script>
 </body>
 
 </html>
