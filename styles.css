@@ -21,6 +21,9 @@ body{
     /* flex-direction: column; */
     align-items: flex-start;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .title {
     font-size: 1.5rem;
@@ -56,14 +59,16 @@ body{
     font-weight: bold;
 }
 .toggle-button{
+    background-color: #EED9C4;
+    border: none;
     position: absolute;
     top: 1rem;
     right: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 31px;
-    height: 21px;
+    width: 41px;
+    height: 25px;
 }
 .toggle-button .bar{
     height: 3px;
@@ -75,8 +80,8 @@ body{
 .navlink.active{
     display: flex;
 }
-.homepage, .recipes_page{
-    width: 80%;
+.homepage{
+    /* width: 80%; */
     margin: auto;
     text-align: center;
 }
@@ -84,10 +89,12 @@ body{
 .homepage figcaption, .recipes_page figcaption{
     margin-top: 1vh;
     margin-bottom: 1vh;
+    text-align: center;
 }
 .homepage figcaption:hover, .recipes_page figcaption:hover{
     text-decoration: underline;
     font-weight: bold;
+    
 }
 .homepage img:hover, .recipes_page img:hover{
     transform: scale(1.02);
@@ -119,13 +126,78 @@ body{
 }
 .about_page, .contact_page {
     text-align: center;
-    width: 80%;
     margin: auto;
 }
-.about_page h2, .contact_page h2{
-    font-weight: bold;
-}
 
+.title_background{
+    font-size: 2em;
+    background-color: black;
+    margin-bottom: 1%; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 30%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: table;
+    margin-top: 66px;
+}
+.title_background h2{
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+#recipes_bg{
+    background-image: url(/images/recipes_background.jpg);
+}
+#about_bg {
+    background-image: url(/images/about_background.jpg);
+}
+#home_bg {
+    background-image: url(/images/home_background.jpg);
+}
+#contact_bg {
+    background-image: url(/images/contact_background.jpg);
+}
+footer{
+    text-align: center;
+    font-size: 1em;
+    background-color: #EED9C4;
+    padding: 1em;
+    
+}
+footer a{
+    text-decoration: underline;
+    color: rgb(105, 28, 28);
+}
+footer a:hover{
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+.recipes_page,.recipe{
+    margin-top:80px
+}
+.recipes_page h2 {
+    font-weight: bold;
+    text-align: center;
+}
+.about_page p{
+    margin: 2em;
+}
+.print-button{
+    background-color: white;
+    border: 2px solid black;
+    padding: 0.5em;
+    font-size: 1em;
+}
+.print-button:hover{
+    color: white;
+    background-color: black;
+    text-decoration: underline;
+}
 @media screen and (min-width: 680px) {
     .toggle-button {
         display: none;
@@ -146,131 +218,53 @@ body{
     .navbar{
         display: flex;
     }
-
-       
+    .title{
+        font-size: 2em;
+    }
+    .title_background{
+        margin-top: 117px;
+    }
+    .recipes_page,
+    .recipe {
+            margin-top: 130px
+    }
+    .grid-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }      
 }
-/* .class{
-    display: grid;
-}
-h1{
-    text-align: center;
-} */
-/* home page */
-/* h3{
-    font-size: 1.5rem;
-    font-family: 'Noto Serif Vithkuqi', serif;
-}
-.navlink{
-    display: inline-block;
-    padding: 10px 20px;
-    margin-right: 10px;
-    text-decoration: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: 1px solid black;
-}
-figcaption {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    margin-bottom: 3rem;
-}
-
-
-
-.center img{
-    display: block;
-    margin:auto;
-    width: 50%;
-}
-/* end home page */
-/* specific recipe page styling */
-/* .recipe{
-    border: 4mm ridge rgba(245, 216, 184, 0.6);
-    margin-left: 10%;
-    margin-right: 10%;
-}
-.image_caption{
-    display: flex;
-}
-.image_caption img{
-    max-width: 100%;
-    height: auto;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 1rem;
-}
-.image_caption p{
-    margin-left: 0px;
+@media screen and (min-width: 1024px){
+    .grid-items{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .about_grid {
+        margin: auto;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    
+    .about_grid img {
+        margin: 2em;
+    }
+    .recipe{
+        width: 800px;
+        border: 10px double burlywood;
+        box-sizing: border-box;
+        padding: 2%;
+        margin-bottom: 1em;
+    }
+    .image_caption{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: auto;
+    }
+    .image_caption img{
+        grid-row: 1/-1;
+        margin-top: 5%;
+    }
 }
 
-.recipe h3{
-    font-size: 1.5rem;
-    font-weight: bold;
-}.recipe_instructions{
-    margin-bottom: 2rem;
-}
-.recipe_instructions h3{
-    text-align: left;
-    margin-left: 0;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-.recipe_instructions h4 {
-    text-align: left;
-    margin-left: 0;
-    font-size: 1rem;
-    text-decoration: underline;
-}
-.recipe_instructions ul,
-.recipe_instructions ol {
-    margin-left: 0;
-    padding: 0;
-    /* margin-bottom: 1rem; */
-/* } */
-/* indents ingredients */
-/* .recipe_instructions li {
-    margin-left: 0;
-    padding: 0;
-    margin-bottom: 1rem;
-} */
-/* end specific recipe styling */
-/* .courses {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    /* Allow items to wrap to the next line */
-    /* justify-content: space-between;
-    padding: 0;
-    margin: 0; */
-/* }  */
-
-/* .courses li {
-    flex: 0 0 calc(33.33% - 20px);
-    /* Adjust width based on the number of items */
-    /* margin: 10px;
-    /* Add margin for spacing between items */
-    /* box-sizing: border-box;  */
-    /* Include padding and border in width calculation */
-/* }  */
-
-/* .courses a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-}
-
-.courses img {
-    max-width: 100%;
-    height: auto;
-    width: 200px;
-} */
-
-/* .courses figcaption {
-    margin-top: 5px;
-    font-style: italic;
-}
-.about_me{
-    margin-top: 3%;
-}  */
 

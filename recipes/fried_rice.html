@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat With Em</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <h1 class="title">Eat With Em</h1>
+        <button onclick="toggleNavbar()" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <div class="navlink">
+            <ul>
+                <li><a href="/index.html" class="navlink">Home</a></li>
+                <li><a href="/recipes.html" class="navlink">Recipes</a></li>
+                <li><a href="/about.html" class="navlink">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- recommended recipes -->
+    <div class="recipe" id="recipe2">
+        <button onclick="printContent('recipe2')" class="print-button">Print Recipe</button>
+        <h2>Chicken Fried Rice</h2>
+        <div class="image_caption">
+            <p>This chicken fried rice recipe is an ideal choice for hectic weeknights. Packed with veggies,
+            wholesome protein, and nourishing carbs from the rice, it promises to offer a delightful balance of flavors.
+            It also has higher protein content compared to traditional fried rice, so it's sure to leave you full and satisfied. What's more, you can tailor it to your preferred protein source and add any vegetable that you have leftover in your fridge. </p>
+            <img src="/images/fried_rice.jpg" alt="fried rice">
+        </div>
+        <h3 class="servings">Servings: 2</h3>
+        <div class="recipe_instructions">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1 cup cooked rice (preferably leftover rice)</li>
+                <li>1/2 lb boneless skinless chicken breasts, diced into 3/4 inch pieces</li>
+                <li>2 eggs</li>
+                <li>1 tbsp minced garlic</li>
+                <li>1 tbsp vegetable oil</li>
+                <li>1 tbsp toasted sesame oil</li>
+                <li>1/2 cup frozen edamame</li>
+                <li>1/2 cup frozen corn</li>
+                <li>1/2 medium white onion, diced</li>
+                <li>2 tbsp soy sauce</li>
+                <li>1 tbsp siracha</li>
+                <li>salt</li>
+                <li>freshly ground pepper</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <ol>
+                    <li>Heat a pan over medium-high heat and add oil.</li>
+                    <li>Add diced chicken breast to the pan and Season with salt and pepper.Cook until done, about 5-6 minutes.</li>
+                    <li>Add minced garlic and onion to the pan; sauté together until onions are translucent.</li>
+                    <li>Add frozen corn and edamame, sauté until thawed.</li>
+                    <li>Add the rice, cooked chicken, soy sauce, sesame oil, sriracha, and black pepper.</li>
+                    <li>Stir to mix and serve warm.</li>
+                </ol>
+
+            </ol>
+            <h3>Enjoy:)</h3>
+        </div>
+    </div>
+<footer>
+    <a href="#" class="back-to-top">Back to Top</a>
+    <h4>Copyright &copy 2023 Eat With Em</h4>
+        <a href="mailto:emilymaa@umich.edu">emilymaa@umich.edu</a>
+</footer>
+    <script src="/script.js" defer></script>
+</body>

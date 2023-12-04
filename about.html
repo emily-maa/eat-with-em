@@ -5,49 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- navigation bar -->
     <nav class="navbar">
         <h1 class="title">Eat With Em</h1>
-        <a href="#" class="toggle-button">
+        <button onclick="toggleNavbar()" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </a>
+        </button>
         <div class="navlink">
             <ul>
                 <li><a href="index.html" class="navlink">Home</a></li>
                 <li><a href="recipes.html" class="navlink">Recipes</a></li>
                 <li><a href="about.html" class="navlink">About</a></li>
-                <li><a href="contact.html" class="navlink">Contact</a></li>
             </ul>
         </div>
     </nav>
 
 
     <!-- recommended recipes -->
-    <div class="about_page">
-        <h2>About</h2>
-        <img src="./images/Profile.jpg" alt="">
-        <p>Hi! I'm so glad you're here. I'm Emily and I am a student at the University of Michigan studying Computer Science
-            with a minor in UX Design. This website is a product of that blend, as I wanted to create a space to showcase
-            my collection of tasty and nutritious recipes. </p>
-        
-        <p>Being a college student myself, I understand the juggling act of schedules, which is why I've curated these recipes -
-            to offer a helping hand in preparing nourishing meals even when time is tight.</p>
-        
-        <p>In the whirlwind of university days, dedicating time to cooking nutritious meals can feel like a bit of a hassle.
-            That's
-            where this platform comes in, a place to find quick, satisfying recipe. Whether you're a seasoned cook or just
-            starting
-            out,I hope you find something here to spark your culinary creativity.</p>
-        
-        <p>Thank you for joining me on this journey!</p>
+    <div class="about_page" id="top">
+        <div class="title_background" id="about_bg">
+            <h2>About</h2>
+        </div>
+
+        <div class="about_grid">
+            <img src="./images/Profile.jpg" alt="profile image">
+            <div class="author_description">
+                <p>Hi! I'm so glad you're here. I'm Emily and I am a student at the University of Michigan studying Computer Science
+                    with a minor in UX Design. This website is a product of that blend, as I wanted to create a space to showcase
+                    my collection of tasty and nutritious recipes. </p>
+                
+                <p>Being a college student myself, I understand the juggling act of schedules, which is why I've curated these recipes -
+                    to offer a helping hand in preparing nourishing meals even when time is tight.</p>
+                
+                <p>In the whirlwind of university days, dedicating time to cooking nutritious meals can feel like a bit of a hassle.
+                    That's
+                    where this platform comes in, a place to find quick, satisfying recipe. Whether you're a seasoned cook or just
+                    starting
+                    out,I hope you find something here to spark your culinary creativity.</p>
+                
+                <p>Thank you for joining me on this journey!</p>
+            </div>
+        </div>
     </div>
- 
+<footer>
+    <a href="#" class="back-to-top">Back to Top</a>
+    <h4>Copyright &copy 2023 Eat With Em</h3>
+        <a href="mailto:emilymaa@umich.edu">emilymaa@umich.edu</a>
+</footer>
 
 <script src="script.js" defer></script>
 </body>

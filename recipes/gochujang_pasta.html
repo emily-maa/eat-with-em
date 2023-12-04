@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat With Em</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <h1 class="title">Eat With Em</h1>
+        <button onclick="toggleNavbar()" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <div class="navlink">
+            <ul>
+                <li><a href="/index.html" class="navlink">Home</a></li>
+                <li><a href="/recipes.html" class="navlink">Recipes</a></li>
+                <li><a href="/about.html" class="navlink">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- recommended recipes -->
+    <div class="recipe" id="recipe3">
+        <button onclick="printContent('recipe3')" class="print-button">Print Recipe</button>
+        <h2>Gochujang Pasta</h2>
+        <div class="image_caption">
+            <p>Get ready to savor the goodness of our Spicy and Creamy Gochujang Pasta! Packed with flavor and a hint of heat, this
+            dish is perfect for anyone craving a wholesome and tasty meal. Tender chicken, along with onion, spinach, and tomato,
+            comes together to make a nutritious option for lunch or dinner. It's a deliciously simple way to satisfy your taste
+            buds!</p>
+            <img src="/images/gochujang_pasta.jpg" alt="gochujang pasta">
+        </div>
+        <h3 class="servings">Servings: 2</h3>
+        <div class="recipe_instructions">
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1/2 lb dried pasta</li>
+                <li>2 tbsp oil</li>
+                <li>2 tbsp reserved pasta water</li>
+                <li>2 tbsp gochujang paste</li>
+                <li>1 tbsp minced garlic</li>
+                <li>1 tbsp vegetable oil</li>
+                <li>1/2 large onion, diced</li>
+                <li>3 cups baby spinach</li>
+                <li>1 medium tomato, diced</li>
+                <li>1/4 cup sun dried tomatoes, diced</li>
+                <li>2 chicken thighs</li>
+                <li>salt, pepper, garlic powder, paprika, and chili powder to taste</li>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Add chicken thigh to a bowl with 1 tbsp of oil, and salt, pepper, paprika, and chili powder to taste. Rub the spices onto both sides of the chicken.</li>
+                <li>Air fry the chicken thighs at 400F for 8-12 minutes on each side, until golden add cooked through the center</li>
+                <li>In a pot, boil water and add salt generously. Add pasta into the pot and cook until al dente according to package instructions</li>
+                <li>Heat a pan over medium-low heat and add oil.</li>
+                <li>Add minced garlic, onion, and sundried tomatoes to the pan and saute until the onion is translucent.</li>
+                <li>Add the tomato and spinach and saute for another 2-3 minutes</li>
+                <li>Allow the air-fried chicken to cool for 5-10 minutes, then cut it into strips.</li>
+                <li>Combine the chicken and pasta into the pan and mix.</li>
+                <li>Add gochujang, along with salt and pepper to taste. Mix to combine and top with shredded cheese.</li>
+            </ol>
+            <h3>Enjoy:)</h3>
+        </div>
+    </div>
+    <footer>
+        <a href="#" class="back-to-top">Back to Top</a>
+        <h4>Copyright &copy 2023 Eat With Em</h4>
+            <a href="mailto:emilymaa@umich.edu">emilymaa@umich.edu</a>
+    </footer>
+    <script src="/script.js" defer></script>
+</body>

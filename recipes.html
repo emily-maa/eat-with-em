@@ -13,17 +13,16 @@
     <!-- navigation bar -->
     <nav class="navbar">
         <h1 class="title">Eat With Em</h1>
-        <a href="#" class="toggle-button">
+        <button onclick="toggleNavbar()" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </a>
+        </button>
         <div class="navlink">
             <ul>
                 <li><a href="index.html" class="navlink">Home</a></li>
                 <li><a href="recipes.html" class="navlink">Recipes</a></li>
                 <li><a href="about.html" class="navlink">About</a></li>
-                <li><a href="contact.html" class="navlink">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -31,29 +30,39 @@
 
 
     <!-- recommended recipes -->
-    <div class="recipes_page">
-        <h2>Recipes</h2>
-        <div class="recommended_recipe">
-            <a href="breakfast_recipes.html">
-                <img src="images/avocado_toast.jpg" alt="avocado toast">
-                <figcaption>Breakfast Recipes</figcaption>
-            </a>
+    <div class="recipes_page" id="top">
+        <div class="title_background" id="recipes_bg">
+            <h2>Recipes Index</h2>
         </div>
-
-        <div class="recommended_recipe">
-            <a href="lunch_recipes.html">
-                <img src="images/green_beans.jpg" alt="green beans">
-                <figcaption>Lunch Recipes</figcaption>
-            </a>
+        
+        <div class="grid-items">
+            <div class="recommended_recipe">
+                <a href="breakfast_recipes.html">
+                    <img src="images/avocado_toast.jpg" alt="avocado toast">
+                    <figcaption>Breakfast Recipes</figcaption>
+                </a>
+            </div>
+            <div class="recommended_recipe">
+                <a href="lunch_dinner_recipes.html">
+                    <img src="images/gochujang_pasta.jpg" alt="gochujang pasta">
+                    <figcaption>Lunch/Dinner Recipes</figcaption>
+                </a>
+            </div>
+            <div class="recommended_recipe">
+                <a href="side-dish-recipes.html">
+                    <img src="images/green_beans.jpg" alt="green beans">
+                    <figcaption>Side Dish Recipes</figcaption>
+                </a>
+            </div>
         </div>
-        <div class="recommended_recipe">
-            <a href="dinner_recipes.html">
-                <img src="images/gochujang_pasta.jpg" alt="green beans">
-                <figcaption>Dinner Recipes</figcaption>
-            </a>
-        </div>
+        
 
     </div>
+    <footer>
+        <a href="#" class="back-to-top">Back to Top</a>
+        <h4>Copyright &copy 2023 Eat With Em</h3>
+            <a href="mailto:emilymaa@umich.edu">emilymaa@umich.edu</a>
+    </footer>
     <script src="script.js" defer></script>
 </body>
 

@@ -13,17 +13,16 @@
     <!-- navigation bar -->
     <nav class="navbar">
         <h1 class="title">Eat With Em</h1>
-        <a href="#" class="toggle-button">
+        <button onclick="toggleNavbar()" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </a>
+        </button>
         <div class="navlink">
             <ul>
                 <li><a href="index.html" class="navlink">Home</a></li>
                 <li><a href="recipes.html" class="navlink">Recipes</a></li>
                 <li><a href="about.html" class="navlink">About</a></li>
-                <li><a href="contact.html" class="navlink">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -31,16 +30,27 @@
 
 
     <!-- recommended recipes -->
-    <div class="recipes_page">
-        <h2>Dinner Recipes</h2>
+    <div class="recipes_page" id="top">
+        <h2>Lunch/Dinner Recipes</h2>
         <div class="recommended_recipe">
-            <a href="./recipes/green_beans.html">
-                <img src="images/gochujang_pasta.jpg" alt="green beans">
+            <a href="./recipes/gochujang_pasta.html">
+                <img src="images/gochujang_pasta.jpg" alt="gochujang pasta">
                 <figcaption>Gochujang Pasta</figcaption>
+            </a>
+        </div>
+        <div class="recommended_recipe">
+            <a href="./recipes/fried_rice.html">
+                <img src="images/fried_rice.jpg" alt="fried rice">
+                <figcaption>Chicken Fried Rice</figcaption>
             </a>
         </div>
 
     </div>
+    <footer>
+        <a href="#" class="back-to-top">Back to Top</a>
+        <h4>Copyright &copy 2023 Eat With Em</h3>
+            <a href="mailto:emilymaa@umich.edu">emilymaa@umich.edu</a>
+    </footer>
     <script src="script.js" defer></script>
 </body>
 
