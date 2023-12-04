@@ -9,7 +9,7 @@ function printContent(recipeId) {
   var recipeContent = document.getElementById(recipeId).innerHTML;
   var printWindow = window.open('', '_blank');
   printWindow.document.write('<html><head><title>Print Recipe</title>');
-  printWindow.document.write('<link rel="stylesheet" href="../print-styles.css" type="text/css" media = "print"/>');
+  printWindow.document.write('<link rel="stylesheet" href="../print-styles.css" type="text/css" media="print"/>');
   printWindow.document.write('</head><body>');
   printWindow.document.write(recipeContent);
   printWindow.document.write('</body></html>');

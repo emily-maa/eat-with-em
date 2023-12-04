@@ -7,6 +7,9 @@ footer{
 button{
     display: none;
 }
-*{
-    color: green;
+.recipe {
+    border: 10px double burlywood;
+    margin: auto;
+    padding: 2%;
 }
+
