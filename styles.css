@@ -150,16 +150,16 @@ body{
     vertical-align: middle;
 }
 #recipes_bg{
-    background-image: url(/images/recipes_background.jpg);
+    background-image: url(images/recipes_background.jpg);
 }
 #about_bg {
-    background-image: url(/images/about_background.jpg);
+    background-image: url(images/about_background.jpg);
 }
 #home_bg {
-    background-image: url(/images/home_background.jpg);
+    background-image: url(images/home_background.jpg);
 }
 #contact_bg {
-    background-image: url(/images/contact_background.jpg);
+    background-image: url(images/contact_background.jpg);
 }
 footer{
     text-align: center;
